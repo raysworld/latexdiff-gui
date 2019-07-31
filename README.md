@@ -26,4 +26,4 @@ python ./latexdiff-gui.py
 
 2. Follow the steps on the screenshot to get the output file:
 
-![](https://raw.githubusercontent.com/raysworld/latexdiff-gui/master/figs/how-to-use.png?token=AB5QWU7W6JBVNE3SJTWXICK5IGDAY)
+![](https://raw.githubusercontent.com/raysworld/latexdiff-gui/master/figs/how-to-use.png)
