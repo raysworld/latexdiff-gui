@@ -14,3 +14,4 @@ pip install -r requirements.txt
 python ./latexdiff-gui.py
 ```
 
+![](https://raw.githubusercontent.com/raysworld/latexdiff-gui/master/figs/how-to-use.png)
