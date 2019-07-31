@@ -6,7 +6,8 @@ import datetime
 
 from PySide2.QtUiTools import QUiLoader
 from PySide2.QtWidgets import QApplication, QWidget, QPushButton, QLineEdit, QFileDialog, QMessageBox, QComboBox, QListWidget, QListWidgetItem
-from PySide2.QtCore import QFile, QObject
+from PySide2.QtCore import QFile, QObject, Qt
+
 
 from distutils.spawn import find_executable
 
@@ -34,6 +35,12 @@ def showMsg(msg, title='Warning', icon=QMessageBox.Question):
     dialog.setWindowTitle(title)
     dialog.setIcon(icon)
     dialog.exec_()
+
+def solveHighRes():
+    if hasattr(Qt, 'AA_EnableHighDpiScaling'):
+        QApplication.setAttribute(Qt.AA_EnableHighDpiScaling, True)
+    if hasattr(Qt, 'AA_UseHighDpiPixmaps'):
+        QApplication.setAttribute(Qt.AA_UseHighDpiPixmaps, True)
 
 def findTool():
     global LATEX_DIFF_EXEC
@@ -172,9 +179,10 @@ class Form(QWidget):
 
 
 if __name__ == "__main__":
-    app = QApplication(sys.argv)
-
+    solveHighRes()
     findTool()
+
+    app = QApplication(sys.argv)
 
     form = Form('mainwindow.ui')
 
