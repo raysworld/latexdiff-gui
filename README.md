@@ -26,4 +26,26 @@ python ./latexdiff-gui.py
 
 2. Follow the steps on the screenshot to get the output file:
 
-![](https://raw.githubusercontent.com/raysworld/latexdiff-gui/master/figs/how-to-use.png?token=AB5QWU7W6JBVNE3SJTWXICK5IGDAY)
+![](https://raw.githubusercontent.com/raysworld/latexdiff-gui/master/figs/how-to-use.png)
+
+#### Markup Styles
+
+1. Underline (default)
+
+   ![](https://raw.githubusercontent.com/raysworld/latexdiff-gui/master/figs/stl_underline.png)
+
+2. CTranditional
+
+   ![](https://raw.githubusercontent.com/raysworld/latexdiff-gui/master/figs/stl_ctraditional.png)
+
+3. Traditional
+
+   ![](https://raw.githubusercontent.com/raysworld/latexdiff-gui/master/figs/stl_traditional.png)
+
+4. CFont
+
+   ![](https://raw.githubusercontent.com/raysworld/latexdiff-gui/master/figs/stl_cfont.png)
+
+5. Fontstrike
+
+   ![](https://raw.githubusercontent.com/raysworld/latexdiff-gui/master/figs/stl_fontstrike.png)

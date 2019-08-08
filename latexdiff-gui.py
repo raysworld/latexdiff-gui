@@ -4,6 +4,11 @@ import os, platform
 import subprocess
 import datetime
 
+# include the lib path for PySide2
+# dirname = os.path.dirname(PySide2.__file__)
+# plugin_path = os.path.join(dirname, 'plugins', 'platforms')
+# os.environ['QT_QPA_PLATFORM_PLUGIN_PATH'] = plugin_path
+import PySide2
 from PySide2.QtUiTools import QUiLoader
 from PySide2.QtWidgets import QApplication, QWidget, QPushButton, QLineEdit, QFileDialog, QMessageBox, QComboBox, QListWidget, QListWidgetItem
 from PySide2.QtCore import QFile, QObject, Qt
